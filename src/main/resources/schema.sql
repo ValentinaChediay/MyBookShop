@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE  books(
+id INT AUTO_INCREMENT PRIMARY KEY,
+author INT,
+title VARCHAR(250) NOT NULL,
+priceOld  VARCHAR(250) DEFAULT NULL,
+price VARCHAR(250) DEFAULT NULL
+);
+
+CREATE TABLE  authors(
+                       id INT AUTO_INCREMENT PRIMARY KEY,
+                       firstAndLastName VARCHAR(250) NOT NULL
+);
